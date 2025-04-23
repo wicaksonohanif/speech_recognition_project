@@ -1,0 +1,7 @@
+pydub
+speechrecognition
+srt
+streamlit
+os
+tempfile
+datetime
