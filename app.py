@@ -8,7 +8,7 @@ import srt
 import datetime
 
 # header
-st.image("banner_sr.jpg", use_container_width=True) 
+st.image("banner_sr.jpg", use_column_width=True) 
 
 # title
 st.title("Speech Recognition (Speech to Text) 🎙️📄")
@@ -20,6 +20,12 @@ audio_file = st.file_uploader("🎧 Upload Audio File (.wav)", type=["wav"])
 st.sidebar.title("⚙️ Settings")
 min_silence_len = st.sidebar.slider("Minimum Silence Length (ms)", 100, 3000, 300, step=100)
 silence_thresh = st.sidebar.slider("Silence Threshold (dB)", -60, 0, -40, step=1)
+language_option = st.sidebar.selectbox(
+    "Language for Recognition",
+    options=["Bahasa Indonesia", "English"],
+    index=0
+)
+language_code = "id-ID" if language_option == "Bahasa Indonesia" else "en-US"
 
 if audio_file:
     st.audio(audio_file, format="audio/wav")
@@ -59,7 +65,8 @@ if audio_file:
                 audio_source_offset = start_sec
                 audio_source.DURATION = duration
                 audio_data = recognizer.record(audio_source, duration=duration)
-                recognized_text = recognizer.recognize_google(audio_data, language="id-ID")
+                recognized_text = recognizer.recognize_google(audio_data, language=language_code)
+
 
                 subtitle = srt.Subtitle(
                     index=idx + 1,
