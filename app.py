@@ -8,7 +8,7 @@ import srt
 import datetime
 
 # header
-st.image("banner_sr.jpg", use_column_width=True) 
+st.image("banner_sr.jpg", use_container_width=True) 
 
 # title
 st.title("Speech Recognition (Speech to Text) 🎙️📄")
