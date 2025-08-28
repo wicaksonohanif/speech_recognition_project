@@ -1,4 +1,4 @@
-# 🎙️ Subtitle Generator (Speech Recognition) using Whisper
+# 🎙️ English Subtitle Generator (Speech Recognition) using Whisper
 
 ![Alt Text](assets/img_seg_thumbnail.png)
 
