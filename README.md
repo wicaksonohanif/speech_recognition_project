@@ -43,7 +43,7 @@ pip install openai-whisper streamlit srt ffmpeg
 ```
 
 setup FFmpeg:
-1. Download and extract FFmpeg: https://ffmpeg.org/download.html
+1. Download and extract FFmpeg in C Drive: https://ffmpeg.org/download.html
 2. Create new terminal
 3. run:
    ```
