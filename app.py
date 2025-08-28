@@ -11,9 +11,9 @@ if shutil.which("ffmpeg") is None:
     st.stop()
 
 st.image("banner_sr.jpg", use_container_width=True)
-st.title("English Subtitle Generator 🎙️📄")
+st.title("🎙️📄 English Subtitle Generator")
 
-audio_file = st.file_uploader("🎧 Upload Audio File (.wav)", type=["wav"])
+audio_file = st.file_uploader("Upload Audio File (.wav)", type=["wav"])
 
 @st.cache_resource
 def load_model():
