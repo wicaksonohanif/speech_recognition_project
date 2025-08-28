@@ -1,5 +1,0 @@
-pydub
-speechrecognition
-srt
-streamlit
-
