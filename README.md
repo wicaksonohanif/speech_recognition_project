@@ -1,6 +1,6 @@
 # 🎙️ English Subtitle Generator (Speech Recognition) using Whisper
 
-![Alt Text](assets/img_seg_thumbnail.png)
+![Alt Text](subtitle_gen_thumbnail.png)
 
 ## 🔎 About
 This project focuses english speech reconition and transform it into subtitles (.srt) using the Whisper (medium.en) model.
